@@ -1,0 +1,32 @@
+
+.dropDown_title {
+    background-color: #FF6060;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.dropDown_content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #F7F7F7;
+  }
+  
+.dropDown_content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropDown_content.visible {
+    font-size: 26px;
+    max-height: 582px;
+}
+
+.dropDown_arrowDown {
+    transition: transform 0.2s ease-out;
+}
+
+.dropDown_arrowDown.visible {
+    transform: rotate(-180deg)
+}

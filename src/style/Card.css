@@ -1,0 +1,67 @@
+
+.cardSection{
+    column-gap: 60px;
+    row-gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 40px;
+    padding: 50px;
+    background: #f7f7f7;
+    border-radius: 25px;
+    margin-top: 40px;
+}
+
+.cardSection .card{
+    
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    animation: fadeInUp 600ms ease-in-out;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+}
+
+.cardSection img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: inherit;
+    transform: scale(1);
+    transition: transform 300ms;
+    aspect-ratio: 1/1;
+}
+
+.cardSection div:hover > img {
+    transform: scale(1.01);
+}
+
+.overlay {
+    background: linear-gradient(transparent,rgba(0,0,0,.5));
+    border-radius: inherit;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+h2{
+    bottom: 0;
+    box-sizing: inherit;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 15px 20px;
+    position: absolute;
+}
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

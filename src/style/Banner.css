@@ -1,0 +1,29 @@
+
+.bannerDiv {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+}
+
+.bannerDiv > img {
+    width: 100%;
+    border-radius: 25px;
+    mix-blend-mode: darken;
+    display: block;
+}
+
+.bannerHome h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section {
+    position: relative;
+    text-align: center;
+    color: white;
+  }

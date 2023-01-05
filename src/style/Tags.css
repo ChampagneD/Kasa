@@ -1,0 +1,14 @@
+
+.tag {
+    border-radius: 13px;
+    background-color: #FF6060;
+    padding: 4.5px 20px;
+    margin-right: 10px;
+    font-size: 14px;
+    min-width: 68px;
+    text-align: center;
+}
+.tagText {
+    color: white;
+    margin: 0;
+}
