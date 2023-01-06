@@ -22,3 +22,7 @@
     color: #FF6060;
 }
 
+.navigation a.nav-active {
+    text-decoration: underline;
+}
+
