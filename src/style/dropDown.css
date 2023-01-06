@@ -1,32 +1,52 @@
+.dropDown {
+    margin-bottom: 20px;
+}
 
 .dropDown_title {
     background-color: #FF6060;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0 20px;
+    position: relative;
+    border-radius: 10px;
+    color: white;
+    height: 52px;
 }
 
 .dropDown_content {
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: -10px;
     max-height: 0;
+    transition: max-height 250ms ease-out, padding 300ms ease-out;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    padding-left: 12px;
     background-color: #F7F7F7;
+    color: #FF6060;
   }
   
 .dropDown_content ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    font-size: 18px;
 }
 
 .dropDown_content.visible {
-    font-size: 26px;
     max-height: 582px;
+    padding: 24px 12px 12px 12px;
+    transition: max-height 250ms ease-in-out, padding 300ms ease-in-out;
+
 }
 
 .dropDown_arrowDown {
-    transition: transform 0.2s ease-out;
+    transform: rotate(180deg);
+    transition: transform 300ms;
+    pointer-events: none;
+    height: 17px;
 }
 
 .dropDown_arrowDown.visible {
-    transform: rotate(-180deg)
+    transform: rotate(0deg)
 }

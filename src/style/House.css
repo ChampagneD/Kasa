@@ -23,7 +23,7 @@
     color : #FF6060;
     font-weight: 500;
     font-size: 18px;
-    margin: 20px;
+    margin: 20px 0px;
     display: flex;
     justify-content: space-between;
   }
@@ -59,8 +59,6 @@
 .tagsContainer {
   display: flex;
 }
-
-
 
 @media (min-width: 768px) {
   .bottomContainer {
