@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import useFetch from "../Hooks/useFetchHook";
 import ImageSlider from "../components/Carousel";
 import Tags from "../components/Tags";
@@ -16,7 +16,7 @@ const House = () => {
   if (data) {
     if (data.length > 0) {
       const logement = data.find((logement) => logement.id === productId);
-      console.log();
+      if (!logement)  return <Navigate to="/error" replace={true} />
       const {
         title,
         pictures,
