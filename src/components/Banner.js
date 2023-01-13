@@ -1,15 +1,13 @@
 import React from "react";
 import "../style/Banner.css";
 
-const Section = ({src, text}) => {
+const Section = ({ src, text, classToAdd }) => {
   return (
-    <section className="bannerHome">
+    <section className={`bannerHome ${classToAdd ? classToAdd : ""}`}>
       <div className="bannerDiv">
         <img src={src} alt="Banner home" />
       </div>
-      { text &&
-        <h1>Chez vous, partout et ailleurs</h1>
-      } 
+      {text && <h1>Chez vous, partout et ailleurs</h1>}
     </section>
   );
 };
