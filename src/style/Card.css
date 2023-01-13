@@ -65,3 +65,25 @@ h2{
       transform: translateY(0);
     }
   }
+
+  @media (max-width: 480px) {
+
+    .cardSection {
+        column-gap: 0px; 
+        row-gap: 0px;
+        padding: 0;
+        grid-template-columns: repeat(1,1fr);
+        background: unset;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 1023px) {
+
+    .cardSection {
+        grid-template-columns: repeat(2,1fr);
+        padding: 0;
+        column-gap: 30px; 
+        row-gap: 0px;
+        background: unset;
+    }
+  }
