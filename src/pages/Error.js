@@ -1,18 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "../style/Error.css"
+//STYLE//
+import "../style/Error.css";
 
 const Error = () => {
   return (
     <div className="error">
-      <div className="error_content">
-        <p className="error_number">404</p>
-        <p className="error_text">
+      <div className="errorContent">
+        <p className="errorNumber">404</p>
+        <p className="errorText">
           Oups! La page que vous demandez n'existe pas.
         </p>
       </div>
-      <Link to="/" className="error_link">
+      <Link to="/" className="errorLink">
         Retourner sur la page d'accueil
       </Link>
     </div>

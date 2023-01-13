@@ -7,25 +7,25 @@
     color: #FF6060;
 }
 
-.error_content {
+.errorContent {
     margin: 0 40px;
     text-align: center;
 }
 
-.error_number {
+.errorNumber {
     font-size: 96px;
     font-weight: 700;
     margin: 0;
 }
 
-.error_text {
+.errorText {
     font-size: 18px;
     font-weight: 500;
     margin: 0;
     margin-top: 10px;
 }
 
-.error_link {
+.errorLink {
     font-size: 14px;
     font-weight: 500;
     margin-top: 133px;
@@ -37,29 +37,29 @@
         height: 725px;
     }
 
-    .error_number {
+    .errorNumber {
         font-size: 224px;
     }
 
-    .error_text {
+    .errorText {
         font-size: 30px;
     }
 
-    .error_link {
+    .errorLink {
         font-size: 16px;
     }
 }
 
 @media (min-width: 992px) {
-    .error_number {
+    .errorNumber {
         font-size: 288px;
     }
 
-    .error_text {
+    .errorText {
         font-size: 36px;
     }
 
-    .error_link {
+    .errorLink {
         font-size: 16px;
     }
 }

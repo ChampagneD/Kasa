@@ -50,3 +50,17 @@
 .dropDown_arrowDown.visible {
     transform: rotate(0deg)
 }
+
+@media (max-width: 480px) {
+    .dropDown_arrowDown {
+    height: 15px;
+   }
+   .dropDown_content ul {    
+    font-size: 17px;
+}
+.dropDown_content {
+    font-size: 17px;
+  }
+
+
+}

@@ -40,8 +40,8 @@ const About = () => {
         classToAdd="mobileBanner"
       />
       <div className="aboutContainer">
-        {aboutDropDown.map((drop) => {
-          return <DropDown title={drop.title} content={drop.content} />;
+        {aboutDropDown.map((drop, index) => {
+          return <DropDown key={index} title={drop.title} content={drop.content} />;
         })}
       </div>
     </div>

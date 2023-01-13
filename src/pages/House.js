@@ -16,7 +16,7 @@ const House = () => {
   if (data) {
     if (data.length > 0) {
       const logement = data.find((logement) => logement.id === productId);
-      if (!logement)  return <Navigate to="/error" replace={true} />
+      if (!logement) return <Navigate to="/error" replace={true} />;
       const {
         title,
         pictures,
