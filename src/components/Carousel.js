@@ -25,10 +25,10 @@ const ImageSlider = ({ slides }) => {
     <div className="sliderStyles">
       <div>
         <div onClick={goToPrevious} className="leftArrowStyles">
-          <img src={leftArrow} />
+          <img src={leftArrow} alt=""/>
         </div>
         <div onClick={goToNext} className="rightArrowStyles">
-          <img src={rightArrow} />
+          <img src={rightArrow} alt="" />
         </div>
       </div>
       <div className="slideStyles" style={slideStylesWidthBackground}>

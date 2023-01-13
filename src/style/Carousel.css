@@ -40,3 +40,21 @@
   left: 50%;
   color: white;
 }
+
+@media (max-width: 480px) {
+
+    .sliderStyles img {
+        height: 20px;        
+    }
+    
+    .rightArrowStyles{        
+        right: 10px;        
+    }
+    
+    .leftArrowStyles {
+        left: 10px;
+    }
+    .counterStyles {
+        display: none;
+      }
+}
