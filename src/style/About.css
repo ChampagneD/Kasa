@@ -2,3 +2,11 @@
     width: 80%;
     margin: 30px auto;
 }
+
+@media (max-width: 480px) {
+    .aboutContainer {
+        width: unset;
+        margin-left: 5.5vw;
+        margin-right: 5.5vw;
+    }
+}
