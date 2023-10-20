@@ -23,18 +23,22 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <div className="sliderStyles">
-      <div>
-        <div onClick={goToPrevious} className="leftArrowStyles">
-          <img src={leftArrow} alt="" />
+      {slides.length > 1 && (
+        <div>
+          <div onClick={goToPrevious} className="leftArrowStyles">
+            <img src={leftArrow} alt="" />
+          </div>
+          <div onClick={goToNext} className="rightArrowStyles">
+            <img src={rightArrow} alt="" />
+          </div>
         </div>
-        <div onClick={goToNext} className="rightArrowStyles">
-          <img src={rightArrow} alt="" />
-        </div>
-      </div>
+      )}
       <div className="slideStyles" style={slideStylesWidthBackground}>
-        <p className="counterStyles">
-          {currentIndex + 1}/{slides.length}
-        </p>
+        {slides.length > 1 && (
+          <p className="counterStyles">
+            {currentIndex + 1}/{slides.length}
+          </p>
+        )}
       </div>
     </div>
   );
