@@ -1,6 +1,6 @@
 import React from "react";
 import logoWhite from "../assets/logoWhite.svg";
-import "../style/Footer.css";
+import "../style/Footer.sass";
 
 const Footer = () => {
   return (

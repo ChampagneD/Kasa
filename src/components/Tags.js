@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/Tags.css";
+import "../style/Tags.sass";
 
 const Tags = ({ tags }) => {
   return tags.map((tag, index) => {

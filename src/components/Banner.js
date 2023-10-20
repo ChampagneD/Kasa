@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/Banner.css";
+import "../style/Banner.sass";
 
 const Section = ({ src, text, classToAdd }) => {
   return (

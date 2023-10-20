@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // Styles
-import "../style/dropDown.css";
+import "../style/dropDown.sass";
 import arrowDown from "../assets/chevronDown.svg";
 
 const useDropDownMenu = ({ title, content }) => {

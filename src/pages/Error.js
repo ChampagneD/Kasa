@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 //STYLE//
-import "../style/Error.css";
+import "../style/Error.sass";
 
 const Error = () => {
   return (

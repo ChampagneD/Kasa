@@ -7,7 +7,7 @@ import Rating from "../components/Rating";
 import DropDown from "../components/dropDown";
 
 // Style
-import "../style/House.css";
+import "../style/House.sass";
 
 const House = () => {
   const { data } = useFetch();

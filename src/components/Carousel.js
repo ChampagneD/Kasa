@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import "../style/Carousel.css";
+import "../style/Carousel.sass";
 //Styles
 
 import leftArrow from "../assets/leftArrow.svg";
@@ -25,7 +25,7 @@ const ImageSlider = ({ slides }) => {
     <div className="sliderStyles">
       <div>
         <div onClick={goToPrevious} className="leftArrowStyles">
-          <img src={leftArrow} alt=""/>
+          <img src={leftArrow} alt="" />
         </div>
         <div onClick={goToNext} className="rightArrowStyles">
           <img src={rightArrow} alt="" />

@@ -3,7 +3,7 @@ import { React, useState, useEffect } from "react";
 import Section from "../components/Banner";
 import DropDown from "../components/dropDown";
 
-import "../style/About.css";
+import "../style/About.sass";
 import banner from "../assets/aboutBanner.webp";
 import mobileBanner from "../assets/aboutBannerPhone.webp";
 
@@ -41,7 +41,9 @@ const About = () => {
       />
       <div className="aboutContainer">
         {aboutDropDown.map((drop, index) => {
-          return <DropDown key={index} title={drop.title} content={drop.content} />;
+          return (
+            <DropDown key={index} title={drop.title} content={drop.content} />
+          );
         })}
       </div>
     </div>

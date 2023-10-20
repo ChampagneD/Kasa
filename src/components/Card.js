@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useFetch from "../Hooks/useFetchHook";
-import "../style/Card.css";
+import "../style/Card.sass";
 
 const Card = () => {
   const { data } = useFetch();

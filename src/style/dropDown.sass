@@ -1,0 +1,56 @@
+@use 'colors'
+
+.dropDown
+    margin-bottom: 20px
+
+.dropDown_title
+    background-color: #FF6060
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 20px
+    position: relative
+    border-radius: 10px
+    color: white
+    height: 52px
+
+.dropDown_content
+    font-size: 18px
+    border-radius: 10px
+    margin-top: -10px
+    max-height: 0
+    transition: max-height 250ms ease-out, padding 300ms ease-out
+    overflow: hidden
+    padding-left: 12px
+    background-color: colors.$grey-bg
+    color: colors.$red-primary
+
+    ul
+        list-style: none
+        padding: 0
+        margin: 0
+        font-size: 18px
+
+    .visible
+        max-height: 582px
+        padding: 24px 12px 12px 12px
+        transition: max-height 250ms ease-in-out, padding 300ms ease-in-out
+
+.dropDown_arrowDown
+    transform: rotate(180deg)
+    transition: transform 300ms
+    pointer-events: none
+    height: 17px
+
+    .visible
+        transform: rotate(0deg)
+
+@media (max-width: 480px)
+    .dropDown_arrowDown
+        height: 15px
+
+    .dropDown_content ul
+        font-size: 17px
+
+    .dropDown_content
+        font-size: 17px
